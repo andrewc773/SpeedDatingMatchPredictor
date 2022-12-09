@@ -14561,57 +14561,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
     </script>
     <!-- End of mathjax configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell    celltag_hide-input">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%html</span>
-<span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span><span class="w"></span>
-<span class="w"> </span><span class="nt">p</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">17</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-</pre></div>
 
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<style>
- p {
-    font-size: 17px;
-    }
-</style>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14623,19 +14573,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="-Introduction-"><div align="center"> Introduction </div><a class="anchor-link" href="#-Introduction-">&#182;</a></h1><p>Speed dating is a formalized matchmaking process where two groups of single participants "date" each other for a short period of time, in round-robin fashion. For each date, each participant must decide whether or not they would like to date the other party in the future. If both say "Yes",
+<h1 id="-Introduction-"><div align="center"> Introduction </div><a class="anchor-link" href="#-Introduction-">&#182;</a></h1><p style="font-size: 17px">Speed dating is a formalized matchmaking process where two groups of single participants "date" each other for a short period of time, in round-robin fashion. For each date, each participant must decide whether or not they would like to see the other party in the future. If both say "Yes",
 then there is a match. </p>
 <br>
-<p>Assembled by Columbia Business School professors, Ray Fisman and Sheena Iyengar, our <a href="https://www.kaggle.com/datasets/annavictoria/speed-dating-experiment">dataset</a> holds data from speed dating events from 2002-2004. Each participant was required to enter information about themselves, such as age, school of undergraduate degree, and occupation. They were also asked to rate (on a scale of 1-10 or 1-100) what they valued most in a partner. At the end of each date, they were also asked to rate the attributes of their partner on an individual level. Each date was between members of the oppposite sex. There are no entries from same-sex groups.</p>
+<p style="font-size: 17px">Assembled by Columbia Business School professors, Ray Fisman and Sheena Iyengar, our <a href="https://www.kaggle.com/datasets/annavictoria/speed-dating-experiment">dataset</a> holds data for speed dating events from 2002-2004. Each participant was required to enter information about themselves, such as age, school of undergraduate degree, and occupation. They were asked to rate (on a scale of 1-10 or 1-100) what they valued most in a partner. At the end of each date, they were also asked to rate the attributes of their partner on an individual level. Each date was between members of the oppposite sex. There were no entries from same-sex groups.</p>
 <br>
-<p>In this tutorial, our goal is to find trends in our data, especially comparing the two groups: men and women. By the end of the tutorial, we will have composed a Machine Learning model using a Decision Tree classification algorithm. We hope that by the end of this tutorial, you will have a better understanding of how and why one should handle null entries in a dataset, hypothesis testing, how to create an ML model with SKLearn, and how to evaluate the performance of such a model. </p>
+<p style="font-size: 17px">In this tutorial, our goal is to find trends in our data, especially comparing the two groups: men and women. By the end of the tutorial, we will have composed a Machine Learning model using a Decision Tree classification algorithm. We hope that by the end of this tutorial, you will have a better understanding of how and why one should handle null entries in a dataset, hypothesis testing, how to create an ML model with SKLearn, and how to evaluate the performance of such a model. </p>
 </div>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Data-Munging"><div align="center">Data Munging</div><a class="anchor-link" href="#Data-Munging">&#182;</a></h1><p>First, let's import the libraries we need to handle and process our data.</p><p>We'll be using <a href="https://pandas.pydata.org/">Pandas</a>, <a href="https://scikit-learn.org/stable/">Scikit-Learn</a>, <a href="https://numpy.org/"> Numpy</a>, and <a href="https://scipy.org/">Scipy</a>:</p>
+<h1 id="Data-Munging"><div align="center">Data Munging</div><a class="anchor-link" href="#Data-Munging">&#182;</a></h1><p style="font-size: 17px">First, let's import the libraries we need to handle and process our data.</p><p style="font-size: 17px">We'll be using <a href="https://pandas.pydata.org/">Pandas</a>, <a href="https://scikit-learn.org/stable/">Scikit-Learn</a>, <a href="https://numpy.org/"> Numpy</a>, and <a href="https://scipy.org/">Scipy</a>:</p>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -14643,7 +14593,7 @@ then there is a match. </p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#import neccessary libraries</span>
@@ -14664,9 +14614,9 @@ then there is a match. </p>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The next step is to acquire the dataset via the internet. You can download the zip file <a href="https://www.kaggle.com/datasets/annavictoria/speed-dating-experiment/download?datasetVersionNumber=1">here</a>.
-<br><br>
-Now, convert the CSV File into a Pandas DataFrame. Initially, we run into an issue with encoding, because our CSV file is not UTF-8 encoded, so we change the encoding as a parameter passed into read_csv().</p>
+<p><p style="font-size: 17px">The next step is to acquire the dataset via the internet. You can download the zip file <a href="https://www.kaggle.com/datasets/annavictoria/speed-dating-experiment/download?datasetVersionNumber=1">here</a>.
+<br><br></p>
+<p><p style="font-size: 17px">Now, convert the CSV File into a Pandas DataFrame. Initially, we run into an issue with encoding, because our CSV file is not UTF-8 encoded, so we change the encoding as a parameter passed into read_csv().</p>
 
 </div>
 </div>
@@ -14675,7 +14625,7 @@ Now, convert the CSV File into a Pandas DataFrame. Initially, we run into an iss
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;Speed Dating Data.csv&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;iso-8859-1&#39;</span><span class="p">)</span>
@@ -14697,7 +14647,7 @@ Now, convert the CSV File into a Pandas DataFrame. Initially, we run into an iss
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
 
 
 
@@ -14880,9 +14830,9 @@ Now, convert the CSV File into a Pandas DataFrame. Initially, we run into an iss
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Above, you can see that there are 195 columns. 195 potential features in our ML model. Wow, that's a lot of features! It is also easy to see
+<p><p style="font-size: 17px">Above, you can see that there are 195 columns. 195 potential features in our ML model. Wow, that's a lot of features! It is also easy to see
 from the above entries that a lot of the columns have been left empty. That is problematic, because we need real data in order to form our prediction model.</p>
-<h3 id="Data-Removal">Data Removal<a class="anchor-link" href="#Data-Removal">&#182;</a></h3><p>We will be removing all columns that involve data entries after the participant has already decided whether or not they are a match with their particpant, since this data is irrelevant for the question we want to answer. We want to be able to predict if a person will match with someone solely from the initial speed date they had, and the information about themselves that they filled out prior (such as gender, age, field of study, etc.)</p>
+<h3 id="Data-Removal">Data Removal<a class="anchor-link" href="#Data-Removal">&#182;</a></h3><p><p style="font-size: 17px">We will be removing all columns that involve data entries after the participant has already decided whether or not they are a match with their particpant, since this data is irrelevant for the question we want to answer. We want to be able to predict if a person will match with someone solely from the initial speed date they had, and the information about themselves that they filled out prior (such as gender, age, field of study, etc.)</p>
 
 </div>
 </div>
@@ -14891,7 +14841,7 @@ from the above entries that a lot of the columns have been left empty. That is p
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Remove every column after &quot;amb3_s&quot;, since the entries after that are filled out after the speed date event.</span>
@@ -14907,8 +14857,8 @@ from the above entries that a lot of the columns have been left empty. That is p
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Some columns require altering, particularly for missing data in the columns. There are several ways to handle missing data, and it is context-dependent. For the mn_sat column, which marks the median SAT score from the participant's school for undergrad, we will look up the median score back in 2002 to fill the column. This column is important because it serves as a proxy for overall intelligence.</p>
-<p>I manually looked up average SAT score from the school of undergrad that the participants have gone to, and assigned the SAT value in a dictionary. From here, I will fill out the mn_sat score for any participants whose mn_sat was left empty, but have listed their school of undergraduate.</p>
+<p><p style="font-size: 17px">Some columns require altering, particularly for missing data in the columns. There are several ways to handle missing data, and it is context-dependent. For the mn_sat column, which marks the median SAT score from the participant's school for undergrad, we will look up the mean score back in 2002 to fill the column. This column is important because it serves as a proxy for overall intelligence.</p>
+<p><p style="font-size: 17px">I manually looked up average SAT score from the school of undergrad that the participants have gone to, and assigned the SAT value in a dictionary. From here, I will fill out the mn_sat score for any participants whose mn_sat was left empty, but have listed their school of undergraduate.</p>
 
 </div>
 </div>
@@ -14917,7 +14867,7 @@ from the above entries that a lot of the columns have been left empty. That is p
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sat_map</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Washington U. in St. Louis&#39;</span><span class="p">:</span> <span class="mi">1469</span><span class="p">,</span> <span class="s1">&#39;university of wisconsin/la crosse&#39;</span><span class="p">:</span> <span class="mi">1174</span> <span class="p">,</span><span class="s1">&#39;HOWARD UNIVERSITY&#39;</span><span class="p">:</span> <span class="mi">1213</span><span class="p">,</span> <span class="s1">&#39;Cambridge University&#39;</span><span class="p">:</span> <span class="mi">1480</span><span class="p">,</span> <span class="s1">&#39;Illinois&#39;</span><span class="p">:</span> <span class="mi">1350</span><span class="p">,</span> 
@@ -14943,7 +14893,7 @@ from the above entries that a lot of the columns have been left empty. That is p
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">pd</span><span class="o">.</span><span class="n">isna</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">mn_sat</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span><span class="p">])</span>
@@ -14964,7 +14914,7 @@ from the above entries that a lot of the columns have been left empty. That is p
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 
 
 
@@ -14983,7 +14933,7 @@ from the above entries that a lot of the columns have been left empty. That is p
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>There are still plenty of missing values for mn_sat, so we will replace these with the median SAT score so far of the participants who have on assigned to them. There is an issue, however. Most of our mn_sat scores are entered as strings, so we will have to convert the entire column to floating point values in order to calculate the median.</p>
+<p><p style="font-size: 17px">There are still plenty of missing values for mn_sat, so we will replace these with the median SAT score so far of the participants who have on assigned to them. There is an issue, however. Most of our mn_sat scores are entered as strings, so we will have to convert the entire column to floating point values in order to calculate the median.</p>
 
 </div>
 </div>
@@ -14992,7 +14942,7 @@ from the above entries that a lot of the columns have been left empty. That is p
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Replace all NaN values with an empty string, set all values in SAT score to strings, then convert all strings to floats for SAT</span>
@@ -15014,7 +14964,7 @@ from the above entries that a lot of the columns have been left empty. That is p
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Another column we will fill the missing entries of is salary. For this column, we will just calculate the mean salary of all participants and replace all missing salary entries with this mean.</p>
+<p><p style="font-size: 17px">Another column we will fill the missing entries of is salary. For this column, we will just calculate the mean salary of all participants and replace all missing salary entries with this mean.</p>
 
 </div>
 </div>
@@ -15023,7 +14973,7 @@ from the above entries that a lot of the columns have been left empty. That is p
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;income&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;income&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
@@ -15042,7 +14992,7 @@ from the above entries that a lot of the columns have been left empty. That is p
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Other columns we will want to remove are the IDs of the participants, IDs of their speed date partner, zipcode, and some of the categorical data that have already been encoded in numbers for us, such as career and field of study in undergrad.</p>
+<p><p style="font-size: 17px">Other columns we will want to remove are the IDs of the participants, IDs of their speed date partner, zipcode, and some of the categorical data that have already been encoded in numbers for us, such as career and field of study in undergrad.</p>
 
 </div>
 </div>
@@ -15051,7 +15001,7 @@ from the above entries that a lot of the columns have been left empty. That is p
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;iid&#39;</span><span class="p">,</span> <span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;idg&#39;</span><span class="p">,</span> <span class="s1">&#39;position&#39;</span><span class="p">,</span> <span class="s1">&#39;positin1&#39;</span><span class="p">,</span> <span class="s1">&#39;partner&#39;</span><span class="p">,</span> <span class="s1">&#39;pid&#39;</span><span class="p">,</span> <span class="s1">&#39;field&#39;</span><span class="p">,</span> <span class="s1">&#39;undergra&#39;</span><span class="p">,</span> <span class="s1">&#39;from&#39;</span><span class="p">,</span> <span class="s1">&#39;zipcode&#39;</span><span class="p">,</span> <span class="s1">&#39;career&#39;</span><span class="p">,</span> <span class="s1">&#39;tuition&#39;</span><span class="p">,</span> <span class="s1">&#39;expnum&#39;</span><span class="p">],</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
@@ -15066,7 +15016,7 @@ from the above entries that a lot of the columns have been left empty. That is p
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Now, let's see where we stand:</p>
+<p><p style="font-size: 17px">Now, let's see where we stand:</p>
 
 </div>
 </div>
@@ -15075,7 +15025,7 @@ from the above entries that a lot of the columns have been left empty. That is p
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,[</span><span class="s1">&#39;attr5_1&#39;</span><span class="p">,</span> <span class="s1">&#39;sinc5_1&#39;</span><span class="p">,</span> <span class="s1">&#39;intel5_1&#39;</span><span class="p">,</span> <span class="s1">&#39;fun5_1&#39;</span><span class="p">,</span> <span class="s1">&#39;amb5_1&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -15096,7 +15046,7 @@ from the above entries that a lot of the columns have been left empty. That is p
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 
 
 
@@ -15182,7 +15132,7 @@ from the above entries that a lot of the columns have been left empty. That is p
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>There are still too many NaN entries for our dataset. We will remove the columns who just have too many null entries, at this point:</p>
+<p><p style="font-size: 17px">There are still too many NaN entries for our dataset. We will remove the columns who just have too many null entries, at this point:</p>
 
 </div>
 </div>
@@ -15191,7 +15141,7 @@ from the above entries that a lot of the columns have been left empty. That is p
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="p">:</span><span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">get_loc</span><span class="p">(</span><span class="s1">&#39;attr1_s&#39;</span><span class="p">)]</span>
@@ -15207,7 +15157,7 @@ from the above entries that a lot of the columns have been left empty. That is p
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>We will also delete all entries that have missing values in the participant's impression of their date. The ratings of the participant's date are crucial to our prediction, and it wouldn't make sense to replace data with the mean or median of a rating if every person's impression can vary greatly (you may really like a particular person, or really not like them).</p>
+<p><p style="font-size: 17px">We will also delete all entries that have missing values in the participant's impression of their date. The ratings of the participant's date are crucial to our prediction, and it wouldn't make sense to replace data with the mean or median of a rating if every person's impression can vary greatly (you may really like a particular person, or really not like them).</p>
 
 </div>
 </div>
@@ -15216,7 +15166,7 @@ from the above entries that a lot of the columns have been left empty. That is p
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Delete any row with a missing entry in any of these columns</span>
@@ -15240,9 +15190,9 @@ from the above entries that a lot of the columns have been left empty. That is p
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Another issue we run into: Out of the 21 waves, waves 6-9 use a rating scale of 1-10 for attributes they are rating, as opposed to an 100-point scale, which is used by all of the other waves. So, we will take each rating from wave 6-9 and multiply it by 10, so it fits an 100-point scale. This is important for replacing nan attribute values with the median/mean of said attribute.
-<br><br>
-It appears that most attributes have been converted to an 100-point scale for waves 6-9, except attr4_1 to shar4_1, so we will adjust those accordingly:</p>
+<p><p style="font-size: 17px">Another issue we run into: Out of the 21 waves of dating, waves 6-9 use a rating scale of 1-10 for attributes they are rating, as opposed to an 100-point scale, which is used by all of the other waves. So, we will take each rating from wave 6-9 and multiply it by 10, so it fits an 100-point scale. This is important for replacing nan attribute values with the median/mean of said attribute.
+<br><br></p>
+<p><p style="font-size: 17px">It appears that most attributes have been converted to an 100-point scale for waves 6-9, except attr4_1 to shar4_1, so we will adjust those accordingly:</p>
 
 </div>
 </div>
@@ -15251,7 +15201,7 @@ It appears that most attributes have been converted to an 100-point scale for wa
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create data mask to get all entries from waves 6-9</span>
@@ -15276,9 +15226,10 @@ It appears that most attributes have been converted to an 100-point scale for wa
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Some empty entries cannot be replaced by the mean or median of the column. This is true if the variable is a categorical, such as the race of speed date partner or career choice. So, we will go ahead and delete any empty entries for those attributes.</p>
-<p><br></p>
-<p>Then, we will replace any empty values with the median for the rest of the dataset.</p>
+<p style="font-size: 17px">Some empty entries cannot be replaced by the mean or median of the column. This is true if the variable is a categorical, such as the race of speed date partner or career choice. So, we will go ahead and delete any empty entries for those attributes.
+
+<br>
+<p style="font-size: 17px">Then, we will replace any empty values with the median for the rest of the dataset.</p>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -15286,7 +15237,7 @@ It appears that most attributes have been converted to an 100-point scale for wa
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Delete all rows where entries cannot be replaced by the median. </span>
@@ -15309,7 +15260,7 @@ It appears that most attributes have been converted to an 100-point scale for wa
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
@@ -15436,7 +15387,7 @@ match_es empty entry count: 0
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>There are no more empty entries in our dataset! Phew, that was a lot of work. Now we can begin to explore the data...</p>
+<p><p style="font-size: 17px">There are no more empty entries in our dataset! Phew, that was a lot of work. Now we can begin to explore the data...</p>
 
 </div>
 </div>
@@ -15444,7 +15395,7 @@ match_es empty entry count: 0
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="-Exploring-the-Data-"><div align="center"> Exploring the Data </div><a class="anchor-link" href="#-Exploring-the-Data-">&#182;</a></h1><p>To begin our exploratory analysis, we will break the data into two separate groups: Male and Female. We could have chosen other ways to separate groups, such as age or race. But it makes intuitive sense to classify based on gender, since the two different groups being paired in the speed dating experiment were male and female.</p>
+<h1 id="-Exploring-the-Data-"><div align="center"> Exploring the Data </div><a class="anchor-link" href="#-Exploring-the-Data-">&#182;</a></h1><p><p style="font-size: 17px">To begin our exploratory analysis, we will break the data into two separate groups: Male and Female. We could have chosen other ways to separate groups, such as age or race. But it makes intuitive sense to classify based on gender, since the two different groups being paired in the speed dating experiment were male and female.</p>
 
 </div>
 </div>
@@ -15453,7 +15404,7 @@ match_es empty entry count: 0
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create two new dataframes from our data, distinguishing between male and female.</span>
@@ -15470,8 +15421,8 @@ match_es empty entry count: 0
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Now let's answer some questions with our given dataframes. For example, are women and men equally as selective when deciding whether or not they want to see someone again after a date?</p>
-<p>To begin to answer this question, we will want to know what information we need. Our number of males and females are roughly equivalent (slightly more males), so we may be able to answer our own question with a simple data visualization, if the difference is stark enough. We will plot this on a bar graph using Matplotlib.</p>
+<p><p style="font-size: 17px">Now let's answer some questions with our given dataframes. For example, are women and men equally as selective when deciding whether or not they want to see someone again after a date?</p>
+<p><p style="font-size: 17px">To begin to answer this question, we will want to know what information we need. Our number of males and females are roughly equivalent (slightly more males), so we may be able to answer our own question with a simple data visualization, if the difference is stark enough. We will plot this on a bar graph using Matplotlib.</p>
 
 </div>
 </div>
@@ -15480,7 +15431,7 @@ match_es empty entry count: 0
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get the decisions of males and females for &quot;Yes&quot; and &quot;No&quot; for the dec attribute, and put into an array</span>
@@ -15498,7 +15449,7 @@ match_es empty entry count: 0
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#X-axis array</span>
@@ -15555,7 +15506,7 @@ match_es empty entry count: 0
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Interesting, despite a slightly larger amount of men, more women than men decide "No", and are also far less likely to say "yes". Men are nearly 50/50 in their decision split. It is clear that women were a bit more choosy than men, on average, in our dataset.</p>
+<p><p style="font-size: 17px">Interesting. Despite a slightly larger amount of men, more women than men decide "No", and are also far less likely to say "yes". Men are nearly 50/50 in their decision split. It is clear that women were a bit more choosy than men, on average, in our dataset.</p>
 
 </div>
 </div>
@@ -15563,9 +15514,9 @@ match_es empty entry count: 0
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Creating-a-Decision-Tree-Model">Creating a Decision Tree Model<a class="anchor-link" href="#Creating-a-Decision-Tree-Model">&#182;</a></h3><p>Since we are also making a classification  model, we will want to save the data and targets for the respective dataframes, for later.
-<br>
-We will get the input of decisions from the participants in the form of an array, and then remove the targets from the dataset, since we are using our ML model to decide whether the participant will decide "yes" or "no".</p>
+<h3 id="Creating-a-Decision-Tree-Model">Creating a Decision Tree Model<a class="anchor-link" href="#Creating-a-Decision-Tree-Model">&#182;</a></h3><p><p style="font-size: 17px">Since we are also making a classification  model, we will want to save the data and targets for the respective dataframes, for later.
+<br></p>
+<p><p style="font-size: 17px">We will get the input of decisions from the participants in the form of an array, and then remove the targets from the dataset, since we are using our ML model to decide whether the participant will decide "yes" or "no".</p>
 
 </div>
 </div>
@@ -15574,7 +15525,7 @@ We will get the input of decisions from the participants in the form of an array
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Collect the respective data and targets according to gender:</span>
@@ -15602,11 +15553,11 @@ We will get the input of decisions from the participants in the form of an array
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Fitting-and-testing-our-model">Fitting and testing our model<a class="anchor-link" href="#Fitting-and-testing-our-model">&#182;</a></h3><p>For each of the data and its targets, we can fit a Decision Tree, and then run 10-fold cross validation (with SKLearn) to estimate the skill of our new model.
+<h3 id="Fitting-and-testing-our-model">Fitting and testing our model<a class="anchor-link" href="#Fitting-and-testing-our-model">&#182;</a></h3><p><p style="font-size: 17px">For each of the data and its targets, we can fit a Decision Tree, and then run 10-fold cross validation (with SKLearn) to estimate the skill of our new model.
 <br></p>
-<p>Our performance metrics chosen will be accuracy, recall, and precision of our test data, in order to give an all-around impression of just how well it performs. We will also compute the mean squared error, to report Cross Validation error for our algorithm. The lower the MSE, the better.</p>
+<p><p style="font-size: 17px">Our performance metrics chosen will be accuracy, recall, and precision of our test data, in order to give an all-around impression of just how well it performs. We will also compute the mean squared error, to report Cross Validation error for our algorithm. The lower the MSE, the better.</p>
 <p><br></p>
-<p>Each cross-validation produces each of these scores, so we will take the mean of all 10.</p>
+<p><p style="font-size: 17px">Each cross-validation produces each of these scores, so we will take the mean of all 10.</p>
 <p><br></p>
 
 </div>
@@ -15616,7 +15567,7 @@ We will get the input of decisions from the participants in the form of an array
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">clf</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">max_depth</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">splitter</span> <span class="o">=</span> <span class="s1">&#39;best&#39;</span><span class="p">,</span> <span class="n">criterion</span> <span class="o">=</span> <span class="s2">&quot;entropy&quot;</span><span class="p">)</span>
@@ -15687,7 +15638,7 @@ Female Training data performance:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">clf</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">max_depth</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">splitter</span> <span class="o">=</span> <span class="s1">&#39;best&#39;</span><span class="p">,</span> <span class="n">criterion</span> <span class="o">=</span> <span class="s2">&quot;entropy&quot;</span><span class="p">)</span>
@@ -15755,7 +15706,7 @@ Male Training data performance:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">clf</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">max_depth</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">splitter</span> <span class="o">=</span> <span class="s1">&#39;best&#39;</span><span class="p">,</span> <span class="n">criterion</span> <span class="o">=</span> <span class="s2">&quot;entropy&quot;</span><span class="p">)</span>
@@ -15822,8 +15773,8 @@ Males and Females Combined Training data performance:
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Our Decision Tree models for males and females perform worse at predicting decisions after a date, as opposed to taking the entire dataset as a whole. Why is this? It could be minor overfitting, since our training data performs about 10% better on accuracy and recall when compared to the training data for males and females. Remember, we are cutting our cutting our training data in half when we split dateframes into male and female.</p>
-<p>This makes sense, because when we use the dataframe combining both males and females, we are creating more training data for the model, which improves the test data performan ce and results in less overfitting in the Tree.</p>
+<p><p style="font-size: 17px">Our Decision Tree models for males and females perform worse at predicting decisions after a date, as opposed to taking the entire dataset as a whole. Why is this? It could be minor overfitting, since our training data performs about 10% better on accuracy and recall when compared to the training data for males and females. Remember, we are cutting our training data in half when we split dateframes into male and female.</p>
+<p><p style="font-size: 17px">This makes sense, because when we use the dataframe combining both males and females, we are creating more training data for the model, which improves the test data performance and results in less overfitting in the Tree.</p>
 
 </div>
 </div>
@@ -15831,7 +15782,7 @@ Males and Females Combined Training data performance:
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Tuning-Hyperparameters">Tuning Hyperparameters<a class="anchor-link" href="#Tuning-Hyperparameters">&#182;</a></h3><p>SKLearn contains several hyperparameters for the DecisionTreeClassifier to create a Decision Tree, such as max_features, min_weight_fraction_leaf, min_samples_split, and many more. To keep our model relatively simple for beginners, we will tune the max_depth (how deep our tree recurses down), to show differences in model performance.</p>
+<h3 id="Tuning-Hyperparameters">Tuning Hyperparameters<a class="anchor-link" href="#Tuning-Hyperparameters">&#182;</a></h3><p><p style="font-size: 17px">SKLearn contains several hyperparameters for the DecisionTreeClassifier to create a Decision Tree, such as max_features, min_weight_fraction_leaf, min_samples_split, and many more. To keep our model relatively simple for beginners, we will tune the max_depth (how deep our tree recurses down), to show differences in model performance.</p>
 
 </div>
 </div>
@@ -15840,7 +15791,7 @@ Males and Females Combined Training data performance:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">clf</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">max_depth</span> <span class="o">=</span> <span class="mi">20</span><span class="p">,</span> <span class="n">splitter</span> <span class="o">=</span> <span class="s1">&#39;best&#39;</span><span class="p">,</span> <span class="n">criterion</span> <span class="o">=</span> <span class="s2">&quot;entropy&quot;</span><span class="p">)</span>
@@ -15907,7 +15858,7 @@ Males and Females Combined Training data performance with max_depth of 20:
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Take for example above, where we set our Decisiom Tree max_depth to 20 for the entire datset. This improved our training set performance to 100% for several metrics, including a 0.0 MSE, but our test set performance suffered, suggesting overfitting. With hyperparameters, it is important to tune them to reach acceptable rates of performance. Unfortunately, tuning hyperparameters is not an exact science and can require trial-and-error. I did several trial-and-error to pick a good max_depth prior to this tutorial, and a value of 10 seemed to do well for all sets.</p>
+<p><p style="font-size: 17px">Take for example above, where we set our Decisiom Tree max_depth to 20 for the entire datset. This improved our training set performance to 100% for several metrics, including a 0.0 MSE, but our test set performance suffered, suggesting overfitting. With hyperparameters, it is important to tune them to reach acceptable rates of performance. Unfortunately, tuning hyperparameters is not an exact science and can require trial-and-error. I did several trial-and-error rounds to pick a good max_depth prior to this tutorial, and a value of 10 seemed to do well for all sets.</p>
 
 </div>
 </div>
@@ -15915,8 +15866,7 @@ Males and Females Combined Training data performance with max_depth of 20:
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Making-sense-of-Feature-Importance-in-a-Decision-Tree-model">Making sense of Feature Importance in a Decision Tree model<a class="anchor-link" href="#Making-sense-of-Feature-Importance-in-a-Decision-Tree-model">&#182;</a></h3><p>We know what a Decision Tree decides to split nodes at is relatively simple; it takes a greedy approach by splitting at the feature with the highest "purity", or least entropy among the other features to split at in order to make a decision. This gives use the highest information gain.</p>
-<p><strong>Algorithm</strong>:
+<h3 id="Making-sense-of-Feature-Importance-in-a-Decision-Tree-model">Making sense of Feature Importance in a Decision Tree model<a class="anchor-link" href="#Making-sense-of-Feature-Importance-in-a-Decision-Tree-model">&#182;</a></h3><p style="font-size: 17px">We know what a Decision Tree decides to split nodes at is relatively simple; it takes a greedy approach by splitting at the feature with the highest "purity", or least entropy among the other features to split at in order to make a decision. This gives use the highest information gain.</p><p><strong>Algorithm</strong>:
 <br>
     while(features_remaining!=null):<br>
         &nbsp;&nbsp;&nbsp;&nbsp;next_split = least_entropy(features_remaining)<br>
@@ -15926,7 +15876,7 @@ Males and Females Combined Training data performance with max_depth of 20:
 <img src = "https://www.baeldung.com/wp-content/ql-cache/quicklatex.com-004399bf736b5463087bdd15d256e30e_l3.svg" width=300p></img>
 <br><em>Image from baeldung.com</em>
 <br></p>
-<p>Scikit learn's Decision Tree classifier has an attribute, <em>feature<em>importances</em></em>, which returns an array of each feature's importance for the model, normalized. Let's take the top five important features for men and women when making a decision, and see how they compare.</p>
+<p><p style="font-size: 17px">Scikit learn's Decision Tree classifier has an attribute, <em>feature<em>importances</em></em>, which returns an array of each feature's importance for the model, normalized. Let's take the top five important features for men and women when making a decision, and see how they compare.</p>
 
 </div>
 </div>
@@ -15935,7 +15885,7 @@ Males and Females Combined Training data performance with max_depth of 20:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># get Tree model feature_importances_ array</span>
@@ -15972,7 +15922,7 @@ Males and Females Combined Training data performance with max_depth of 20:
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Now, we can create a barplot comparing importance of attribute for each gender. In our case, the top five attributes were all the same, though the importance value was different between genders.</p>
+<p><p style="font-size: 17px">Now, we can create a barplot comparing importance of attribute for each gender. In our case, the top five attributes were all the same, though the importance value was different between genders.</p>
 
 </div>
 </div>
@@ -15981,7 +15931,7 @@ Males and Females Combined Training data performance with max_depth of 20:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s2">&quot;figure.figsize&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mf">3.50</span><span class="p">]</span>
@@ -16017,7 +15967,7 @@ Males and Females Combined Training data performance with max_depth of 20:
 
 
 <div class="jp-RenderedImage jp-OutputArea-output ">
-<img src="data:image/png;base64,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b5K0fvkYBWy6UiIcAD7+8Y/zta99ben+fvvtx/HHH790/xOf+ARf/epXeyGyiIiI6IvqdXH+K3AaRTI2B1BZ/gxwQePCaqCenn+lwjwpu+66K1dccQWnnXYar732Gk888QTPPPPM0uMzZsxYJoGLiIiI5tZlC5rtrwNvAf7T9ma2R5eP7Wz/78oJsf/bbbfdmDFjBgALFixgm222YciQITz55JO89NJL3HPPPTz11FNsv/32bLvtthx77LG89FKx5OmoUaP49Kc/zaRJk2hpaeHOO+9kv/32Y8yYMUyePHnpa3zlK19hp512Yvz48ZxzzjkALFq0iK222ooTTjiBrbfemn333ZcXXnhh5f8AIiIiolvq3oNm+1XgwJUQy4C16aabsuqqq/Lwww8zY8YMJk2axMSJE5k5cyazZ89m88035/jjj+fyyy9n/vz5tLW18e1vf3tp/REjRjBz5kze+ta3cvTRR/Ozn/2MO+64g7PPPhuA6dOnc//99/O73/2OuXPnMmfOHG677TYA7r//fk4++WQWLFjAeuutx5VXXtkrP4OIiIioruo8aNMlvU+S6p8anWlvRWtP0CZNmrR0f9iwYYwePZrNN98cgA9/+MNLEyyAgw46CIBtt92WiRMnMmTIEIYOHcrgwYN56qmnmD59OtOnT2f77bdnhx124N577+X+++8HYPTo0UyYMAGAHXfckUWLFq3U9x0RERHdVzVBOx24AnhZ0jOSnpX0TL1KAJL2l3SfpIWSzuzk+MGS5kmaK2m2pN2r1u1Pdt11V2bMmMH8+fPZZptt2GWXXZg5cyYzZsxghx126LLuGmsUizasssoqS7fb99va2rDNWWedxdy5c5k7dy4LFy7kuOOOW6YuwKBBg2hra2vAu4uIiIieVClBsz3E9iq2V7O9Trm/Tr16kgZRDCY4gGIdzyMljetw2k3AdrYnAMcC3+tG3X5jt9124+qrr2b99ddn0KBBrL/++jz11FPMnDmTY445hkWLFrFw4UIALrnkEvbYY4/K195vv/248MILee655wB49NFHeeyxxxryPiIiIqLxqq4kgKSDgLeVu7fYvrpCtZ2BhbYfKK9xGXAwcHf7Cbafqzl/LcBV6/Yn2267LU888QTvf//7lyl77rnnGD58OBdddBGHHXYYbW1t7LTTTpx00kmVr73vvvtyzz33MGnSJADW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
+<img src="data:image/png;base64,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W66RCAeBD37wg3zpS19asX/QQQdx8sknr9j/0Ic+xBe/+MV+iCwiIiKaUb0uzvcAZ1AkY/MAleWPAxc2LqwG6uv5VyrMk7LnnntyxRVXcMYZZ/DCCy/wyCOP8Pjjj684Pnv27JUSuIiIiGhtPbag2f4y8CrgP21vZXts+djJ9v+smRAHvr322ovZs2cDsHDhQnbYYQeGDRvGo48+yjPPPMOiRYtYvnw5O++8MzvuuCMnnngizzxTLHk6ZswYPvaxjzFp0iTa2tq47bbbOOigg9h6662ZOnXqitf4/Oc/z2677caECRM499xzAViyZAnbb789p5xyCq9+9as58MADeeqpp9b8DyAiIiJ6pe49aLafBw5dA7EMWltuuSVrr702DzzwALNnz2bSpEnsscce3HLLLcydO5dtttmGk08+mR/96EcsWLCAjo4Ovv71r6+oP2rUKG655RZe+9rXcvzxx/PjH/+YW2+9lXPOOQeAmTNncu+99/K73/2OO+64g3nz5nHTTTcBcO+993LqqaeycOFCNtlkE6688sp++RlEREREdVXnQZsp6W2SVP/U6E5nK1pngjZp0qQV+yNGjGDs2LFss802ALz73e9ekWABHHbYYQDsuOOO7LHHHgwbNozhw4czdOhQli9fzsyZM5k5cyY777wzu+yyC3fffTf33nsvAGPHjmXixIkA7LrrrixZsmSNvu+IiIjovarzoJ0JbAA8L+kpinvRbHujhkU2yOy5557Mnj2bBQsWsMMOOzBq1Ci+8IUvsNFGG7HLLrswa9asVdZdb71i0Ya11lprxXbnfkdHB7Y5++yzec973rNSvSVLlqx0/pAhQ9LFGRERMQBUakGzPcz2WrbXsb1RuV8pOZN0sKR7JC2WdFY3xw+XNF/SHZLmStq7at2BZK+99uKqq65i0003ZciQIWy66aYsX76cW265hRNOOIElS5awePFiAC655BL22Wefytc+6KCDuOiii3jiiScA+POf/8xDDz3UkPcRERERjVe1BQ1JhwGvK3dvtH1VhTpDKEZ7HgC0A3MkzbB9V81pvwBm2LakCcDlwHYV6w4YO+64I4888ghvf/vbVyp74oknGDlyJBdffDFHHXUUHR0d7LbbbkyZMqXytQ888EAWLVrEpEmTANhwww35/ve/z5AhQ/r8fURERETjyXb9k6Tzgd2AH5RFxwLz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
 "
 >
 </div>
@@ -16032,7 +15982,7 @@ Males and Females Combined Training data performance with max_depth of 20:
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Attractiveness of the partner appears to be a better predictor of a decision for men than it does for women. The same is true for how much the person "likes" their date. Interestingly enough, the best predictors for a decision are based on the decision of the person's date, and whether or not their was a match.</p>
+<p><p style="font-size: 17px">Attractiveness of the partner appears to be a better predictor of a decision for men than it does for women. The same is true for how much the person "likes" their date. Interestingly enough, the best predictors for a decision are based on the decision of the person's date, and whether or not their was a match.</p>
 
 </div>
 </div>
@@ -16040,7 +15990,7 @@ Males and Females Combined Training data performance with max_depth of 20:
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Hypothesis-Testing"><div align="center">Hypothesis Testing</div><a class="anchor-link" href="#Hypothesis-Testing">&#182;</a></h2><p>We will create a new column in our dataset, difference_of_age, which takes the difference in age between the participant and their date.</p>
+<h2 id="Hypothesis-Testing"><div align="center">Hypothesis Testing</div><a class="anchor-link" href="#Hypothesis-Testing">&#182;</a></h2><p><p style="font-size: 17px">We will create a new column in our dataset, difference_of_age, which takes the difference in age between the participant and their date.</p>
 
 </div>
 </div>
@@ -16049,7 +15999,7 @@ Males and Females Combined Training data performance with max_depth of 20:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create new column, &#39;difference_of_age&#39;, and initialize with value 0 for all rows.</span>
@@ -16069,7 +16019,7 @@ Males and Females Combined Training data performance with max_depth of 20:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mean difference in age between any date: &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;difference_of_age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()))</span>
@@ -16109,9 +16059,7 @@ Mean difference in age between matched dates: 0.10053859964093358
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The mean difference in age is larger between matched dates, but is it statistically significant?</p>
-<h3 id="Checking-normal-distribution">Checking normal distribution<a class="anchor-link" href="#Checking-normal-distribution">&#182;</a></h3><p>Now we need to check if our data is normally distributed to see if we can perform a T-Test to compare two different groups here. The two differing groups being the normal populatiom, and those who matched with their date.</p>
-
+<p style="font-size: 17px">The mean difference in age is larger between matched dates, but is it statistically significant? Our null hypothesis would be that there is no statistical significance to the difference in age; it is just a product of sampling or experimental error.</p><h3 id="Checking-normal-distribution">Checking normal distribution<a class="anchor-link" href="#Checking-normal-distribution">&#182;</a></h3><p style="font-size: 17px">Now we need to check if our data is normally distributed to see if we can perform a T-Test to compare two different groups here. The two differing groups being the normal populatiom, and those who matched with their date. </p>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -16119,7 +16067,7 @@ Mean difference in age between matched dates: 0.10053859964093358
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
@@ -16149,7 +16097,7 @@ Mean difference in age between matched dates: 0.10053859964093358
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
 
 
 
@@ -16184,7 +16132,7 @@ Mean difference in age between matched dates: 0.10053859964093358
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Both of the groups seem to have a relatively normal distribution for difference in age. We can perform the Two-Sample T-Test, using Scipy's library, to compute the P-value.</p>
+<p><p style="font-size: 17px">Both of the groups seem to have a relatively normal distribution for difference in age. We can perform the Two-Sample T-Test, using Scipy's library, to compute the P-value.</p>
 
 </div>
 </div>
@@ -16193,7 +16141,7 @@ Mean difference in age between matched dates: 0.10053859964093358
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Run t-test, using Scipy, on the different groups</span>
@@ -16215,7 +16163,7 @@ Mean difference in age between matched dates: 0.10053859964093358
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
 
 
 
@@ -16234,8 +16182,7 @@ Mean difference in age between matched dates: 0.10053859964093358
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The P-Value is not &lt;= 0.05, so the difference in age is not statistically significant between dates that match, compared to all dates.</p>
-
+<p style="font-size: 17px"> The P-Value is not &lt;= 0.05, so the difference in age is not statistically significant between dates that match, compared to all dates. Therefore, the null hypothesis holds. </p>
 </div>
 </div>
 </div>
@@ -16243,9 +16190,9 @@ Mean difference in age between matched dates: 0.10053859964093358
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <div align="center"><img src="https://i0.wp.com/post.psychcentral.com/wp-content/uploads/sites/4/2022/01/couple-silhouette-sunset-holding-hands-walking-grass-1296x728-header-1024x575.jpg?w=1155&h=1528" width=500p></div>
-<div align="center">Copyright: Westend61 / Ezequiel Giménez</div><h2 id="Conclusion"><div align="center">Conclusion</div><a class="anchor-link" href="#Conclusion">&#182;</a></h2><p>Dating and romance can seem complicated and confusing. Using data science, my hope was that this exploration would make the dating world easier to understand. Obviously, love is more complex than numbers, and it is difficult to capture what makes two people click, when everyone is so different. That said, our ML model was able to create a prediction that was better than 50/50 guessing when predicting if someone would like to see another person again, or not.</p>
-<p>So what should someone take away from our findings? I think it is worth thinking about that whether a match existed, or if the other person said "yes" too were hands-down the best predictors of a "Yes" or a "No". It perhaps suggests that people are able to read each other and have an intutive sense of whether or not they get along with someone else. If you are ever unsure of your relationship standing with someone else, or had a bad date experience with them, then chances are, they may feel the same way. And the same goes for positive experiences. Our findings do allude to differences in dating preferences between men and women too. There are several other studies exploring the differences, and our findings do seem to fit those of the other studies, such as larger emphasis placed on phyiscial attractiveness for men as opposed to women.</p>
-<p>Our exploration has much room for improvement. There are several different factors that are still left to explore, such as relationships between matches and differences in intellgience or income. And for rigorous statistical analysis, one should keep in mind to control for other variables to make their findings as precise and accurate as possible. Machine learning can be a powerful tool in reading social dynamics, but newer, fuller, datsets are hopefully available in the near future so we can try and make sense of the world through the patters and relationships it reveals to us.</p>
+<div align="center">Copyright: Westend61 / Ezequiel Giménez</div><h2 id="Conclusion"><div align="center">Conclusion</div><a class="anchor-link" href="#Conclusion">&#182;</a></h2><p><p style="font-size: 17px">Dating and romance can seem complicated and confusing. Using data science, my hope was that this exploration would make the dating world easier to understand. Obviously, love is more complex than numbers, and it is difficult to capture what makes two people click, when everyone is so different. That said, our ML model was able to create a prediction that was better than 50/50 guessing when predicting if someone would like to see another person again or not.</p>
+<p><p style="font-size: 17px">So what should someone take away from our findings? It is noting that whether a match existed, or if the other person said, "yes", too, were hands-down the best predictors of a "Yes" or a "No". It perhaps suggests that people are able to read each other and have an intutive sense of whether or not they get along with someone else. If you were ever unsure of your relationship standing with someone else, or had a bad date experience with them, then chances are, they may felt the same way. And the same goes for positive experiences. Our findings do allude to differences in dating preferences between men and women too. There are several other studies exploring the differences, and our findings do seem to fit those of the other studies, such as larger emphasis placed on phyiscial attractiveness for men as opposed to women.</p>
+<p><p style="font-size: 17px">Our exploration has much room for improvement. There are several different factors that are still left to explore, such as relationships between matches and differences in intellgience or income. As for rigorous statistical analysis, one should keep in mind to control for other variables to make their findings as precise and accurate as possible. Machine learning can be a powerful tool for reading social dynamics, but newer, fuller, datsets are hopefully available in the near future so we can try and make sense of the world through the patterns and relationships they reveal to us.</p>
 
 </div>
 </div>
